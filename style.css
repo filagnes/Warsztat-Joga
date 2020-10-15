@@ -1,0 +1,553 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Global style */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 5rem;
+    font-family: 'Alegreya Sans', sans-serif; 
+    font-weight: 700;
+    text-align: center; 
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 12rem;
+        margin-bottom: 10rem;
+    }
+}
+
+h2 {
+    color: #104734;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;   
+    padding-top: 1rem;
+}
+
+h3 {
+    color: #104734;
+    font-size: 1rem;
+    text-align: left;
+    font-family: 'Alegreya Sans', sans-serif;   
+}
+
+p {
+    margin: 2rem 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    p {
+        margin: 6rem 0;
+    }   
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.logo {
+    width: 4rem; 
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 7rem; 
+    }
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #navbarContent {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.nav-item {
+    color: #303030;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.4rem;
+    border-top: 1px solid #dcdcdc;
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-item {
+        border-top: 1px solid transparent;
+        padding: 0;
+        margin: 0 .5rem;
+        border-radius: .3rem;
+        transition: .5s;
+        color: #104734;
+    }
+} 
+
+.nav-item:hover {
+    color: #104734;    
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-item:hover {
+        transform: scale(1.2);
+        border-radius: .3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .active {
+        transform: scale(1.2);
+        background-color:#f5f5f5;
+    }
+}
+
+hr {
+    margin: 0;
+}
+
+/* Top */
+.top {
+    margin-bottom: 15rem;
+    background-color: #f5f5f5;
+}
+
+@media screen and (min-width: 1200px) {
+    .top {
+        margin: 8rem 0 15rem;
+    }   
+}
+
+.about-joga-text {
+    margin-top: 65%;
+    padding: 1rem 1rem .5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .about-joga-text {
+        padding: 3rem 1rem 2rem;
+    }
+}
+
+.wrap {
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    transition: opacity 2s ease;
+    width: 100%;
+}
+
+.background:hover {
+    opacity: 0;
+}
+
+/*Place*/
+.picture-wrap, .button-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.place-picture {
+    width: 40rem;
+    padding: 0;
+    border-radius: .5rem;
+}
+
+.additional-pictures {
+    display: none;
+}
+
+.additional-pictures1 {
+    display: none;
+}
+.additional-pictures2 {
+    display: none;
+}
+.additional-pictures3 {
+    display: none;
+}
+.additional-pictures4 {
+    display: none;
+}
+.additional-pictures5 {
+    display: none;
+}
+
+.mini {
+    width: 85%;
+    padding: 0;
+    margin-bottom: 2.5rem;
+    border-radius: .5rem;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a img {
+    transition: .5s;
+}
+
+a img:hover {
+    transform: scale(1.1);
+    color: #104734;
+}
+
+/* Rodzaje zajec */
+.our-offer {
+    font-weight: 300;
+    text-align: center;
+}
+
+.classes {
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .classes {
+        padding: 1rem 10rem 0;
+        margin: 3rem 2rem 1rem;
+    }
+}
+
+.picture-class {
+    width: 100%
+    
+}
+
+@media screen and (min-width: 768px) {
+    .picture-class {
+        width: 85%;
+        padding: 0;
+        margin: 1rem 0 2rem;
+        border-radius: .5rem;
+    }
+}
+
+/* About me */
+.about-me {
+    background-color: #f5f5f5;
+    padding: 0 10%;
+    display: flex;
+    justify-content: center ;
+}
+
+.my-picture {
+    width: 75%; 
+    border-radius: .5rem;
+    margin-bottom: 4rem;
+}
+
+.text-about-me {
+    font-weight: 300;
+    text-align: center;
+}
+
+/* Cennik */
+.price-list {
+    background-color: #f5f5f5;
+    padding-bottom: 6rem;
+}
+
+.price {
+    width: 16rem;
+    height: 12rem;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 1.5rem 1.5rem;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
+    width: 8rem;
+}
+
+/* Rooster */
+.rooster {
+    width: 16rem;
+    height: 25rem;
+    background-color: #ffffff;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: 1.5rem 1rem;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+    .rooster {
+        width: 12rem;
+    }
+}
+
+.bold-green {
+    color: #104734;
+    font-weight: 700;
+}
+
+/* Regulamin */
+.regulations {
+    font-weight: 300;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+}
+
+.download {
+    display: flex;
+    justify-content:  center;
+}
+
+/* Kontakt */
+.contact {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 6rem;
+}
+
+.contact p {
+    padding: 0 1rem 0;
+    margin: 0;
+}
+
+.form {
+    padding: 4rem;
+}
+
+/*Go up*/
+.go-up {
+    text-align: center;
+}
+
+/* Stopka */
+.footer-col{
+    padding: 0;
+    margin: 0;
+}
+.site-footer {
+    padding-top: 8rem;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-green {
+    border-radius: .5rem;
+    width: 17rem;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+.bottle-green {
+    color: #104734;
+}
+
+.logo-col {
+   width: 18rem; 
+   height: 18rem;
+   border-top-left-radius: .5rem;
+   border-top-right-radius: .5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #104734;
+}
+
+@media screen and (min-width: 768px) {
+    .logo-col {
+        width: 20rem; 
+        height: 20rem;
+        border-top-right-radius: 0;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;    
+    }    
+}
+
+.contact-col {
+    width: 18rem; 
+    height: 18rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}    
+    
+@media screen and (min-width: 768px) {
+    .contact-col {
+        width: 20rem; 
+        height: 20rem;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: .5rem;    
+    }
+}
+
+.address-col  {
+    background-color: #f5f5f5;
+    padding: 1rem 4rem 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .address-col  {
+        background-color: #f5f5f5;
+        padding: 4rem;
+        margin: 0 2rem;
+    }
+}
+
+.contact-col h2 {
+    text-align: left;
+    font-size: 2.2rem;
+    line-height: 2rem;
+    padding: 0;
+}
+
+.phone-nr {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 2.4rem;
+}
+
+.email-address {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.3rem;
+}
+
+.facebook-icon {
+    font-size: 2rem;
+    margin: .5rem;
+    transition: .5s;
+}
+
+.phone-icon, .email-icon {
+    transition: .5s;
+}
+
+.phone, .email {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.1rem;
+    padding: .5rem;
+}
+
+.phone-icon:hover, .email-icon:hover {
+    transform: scale(1.1);
+}
+
+.facebook-icon:hover {
+    transform: scale(1.2);
+    text-decoration: none;
+}
+
+.footer-col p {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+button {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0;
+    background-color: #ffffff;
+    border: 1px solid #104734;
+    border-radius: .3rem;
+} 
+
+.see-more-less-btn {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    color: #104734;
+    font-family: 'Alegreya Sans', sans-serif;
+    line-height: 1.5rem;
+    padding: .5rem 0;
+    margin-top: 2rem;
+    border: 1px solid #104734;
+    border-radius: .3rem;
+}
+
+.button-text {
+    color: #104734;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+    transition: .5s; 
+}
+
+.button-text:hover {
+    transform: scale(1.1);
+}
+
+/* Copyright */
+.copyright {
+    padding: 10rem 0 2rem;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    font-size: .9rem;
+    color: #a9a9a9;
+    background-color: #383838;
+}
+
+@media screen and (min-width: 768px) {
+    .copyright {
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+.copyright-designed {
+    font-size: .7rem;
+}
+
+/* Kontakt */
+.contact {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.contact .fas {
+    font-size: 1.5rem;
+}
+
+form {
+padding: 0 15rem;
+}
+
+#message {
+    height: 15rem;
+}
+
