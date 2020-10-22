@@ -5,22 +5,30 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
-    line-height: 3rem;
+    line-height: 2.2rem;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        line-height: 2.6rem;
+    }
 }
 
 h1 {
     color: #ffffff;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: 'Alegreya Sans', sans-serif; 
     font-weight: 700;
+    text-transform: uppercase;
     text-align: center; 
-    margin-bottom: 2rem;
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 12rem;
-        margin-bottom: 10rem;
+        margin-bottom: 8rem;
     }
 }
 
@@ -28,9 +36,10 @@ h2 {
     color: #104734;
     font-size: 1.7rem;
     font-weight: 400;
-    text-align: center;
+    text-transform: uppercase;
+    text-align: left;
     font-family: 'Alegreya Sans', sans-serif;   
-    padding-top: 1rem;
+    padding-bottom: .5rem;
 }
 
 h3 {
@@ -41,15 +50,15 @@ h3 {
 }
 
 p {
-    margin: 2rem 0;
+    margin: 1rem;
     font-weight: 300;
-    text-align: center;
-}
+    text-align: left;
+    }
 
 @media screen and (min-width: 768px) {
     p {
-        margin: 6rem 0;
-    }   
+    margin: 2rem 0;
+    }
 }
 
 a:hover {
@@ -73,6 +82,7 @@ a:hover {
 
 @media screen and (min-width: 1200px) {
     .navbar {
+        padding-right: 8.5rem;
         width: 100%;
         position: fixed;
         z-index: 1;
@@ -90,7 +100,7 @@ a:hover {
 .nav-item {
     color: #303030;
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 1.4rem;
+    font-weight: 500;
     border-top: 1px solid #dcdcdc;
 }
 
@@ -100,7 +110,6 @@ a:hover {
         padding: 0;
         margin: 0 .5rem;
         border-radius: .3rem;
-        transition: .5s;
         color: #104734;
     }
 } 
@@ -111,14 +120,12 @@ a:hover {
 
 @media screen and (min-width: 1200px) {
     .nav-item:hover {
-        transform: scale(1.2);
-        border-radius: .3rem;
+        font-weight: 500;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .active {
-        transform: scale(1.2);
         background-color:#f5f5f5;
     }
 }
@@ -129,24 +136,24 @@ hr {
 
 /* Top */
 .top {
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
     background-color: #f5f5f5;
 }
 
 @media screen and (min-width: 1200px) {
     .top {
-        margin: 8rem 0 15rem;
+        margin: 8rem 0 11rem;
     }   
 }
 
-.about-joga-text {
-    margin-top: 65%;
-    padding: 1rem 1rem .5rem;
+.about-joga {
+    margin-top: 38%;
+    padding: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-    .about-joga-text {
-        padding: 3rem 1rem 2rem;
+    .about-joga {
+        padding: 2rem 10rem 0;
     }
 }
 
@@ -165,34 +172,18 @@ hr {
 }
 
 /*Place*/
-.picture-wrap, .button-wrap {
-    display: flex;
-    justify-content: center;
-}
-
 .place-picture {
     width: 40rem;
-    padding: 0;
     border-radius: .5rem;
 }
 
-.additional-pictures {
-    display: none;
-}
-
-.additional-pictures1 {
-    display: none;
-}
-.additional-pictures2 {
-    display: none;
-}
-.additional-pictures3 {
-    display: none;
-}
-.additional-pictures4 {
-    display: none;
-}
-.additional-pictures5 {
+.additional-pictures,
+.additional-pictures1,
+.additional-pictures2,
+.additional-pictures3,
+.additional-pictures4,
+.additional-pictures5,
+.additional-pictures6 {
     display: none;
 }
 
@@ -211,6 +202,8 @@ hr {
 
 a img {
     transition: .5s;
+    padding: 0;
+    margin: 0;
 }
 
 a img:hover {
@@ -221,43 +214,30 @@ a img:hover {
 /* Rodzaje zajec */
 .our-offer {
     font-weight: 300;
+}
+
+.classes, .about-me, .place, .about-rooster {
+    padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .classes, .about-me, .place, .about-rooster {
+        padding: 1rem 10rem 0;
+    }
+}
+
+.classes h2 {
     text-align: center;
 }
 
-.classes {
-    padding: 1rem 0;
-    margin: 1rem 0;
-}
-
-@media screen and (min-width: 768px) {
-    .classes {
-        padding: 1rem 10rem 0;
-        margin: 3rem 2rem 1rem;
-    }
-}
-
 .picture-class {
-    width: 100%
-    
+    width: 100%;
+    margin: 1rem 0 2rem;
+    border-radius: .5rem;
 }
 
-@media screen and (min-width: 768px) {
-    .picture-class {
-        width: 85%;
-        padding: 0;
-        margin: 1rem 0 2rem;
-        border-radius: .5rem;
-    }
-}
 
 /* About me */
-.about-me {
-    background-color: #f5f5f5;
-    padding: 0 10%;
-    display: flex;
-    justify-content: center ;
-}
-
 .my-picture {
     width: 75%; 
     border-radius: .5rem;
@@ -278,13 +258,14 @@ a img:hover {
 /* Cennik */
 .price-list {
     background-color: #f5f5f5;
-    padding-bottom: 6rem;
+    padding-bottom: 1rem;
 }
 
 .price {
     width: 16rem;
     height: 12rem;
     background-color: #ffffff;
+    border-top: 5px solid #104734;
     border-radius: .5rem;
     padding: 1rem;
     margin: 1.5rem 1.5rem;
@@ -305,6 +286,7 @@ a img:hover {
     width: 16rem;
     height: 25rem;
     background-color: #ffffff;
+    border-top: 5px solid #104734;
     border-radius: .5rem;
     padding: 1rem;
     margin: 1.5rem 1rem;
@@ -325,25 +307,13 @@ a img:hover {
 /* Regulamin */
 .regulations {
     font-weight: 300;
-    padding: 0 1rem;
-    margin-bottom: 3rem;
+    padding: 0 10rem;
+    margin-bottom: 2rem;
 }
 
 .download {
     display: flex;
     justify-content:  center;
-}
-
-/* Kontakt */
-.contact {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 6rem;
-}
-
-.contact p {
-    padding: 0 1rem 0;
-    margin: 0;
 }
 
 .form {
@@ -361,7 +331,7 @@ a img:hover {
     margin: 0;
 }
 .site-footer {
-    padding-top: 8rem;
+    padding-top: 3rem;
     background-color: #f5f5f5;
     display: flex;
     justify-content: center;
@@ -492,44 +462,33 @@ a img:hover {
 }
 
 button {
-    width: 10rem;
     display: flex;
     justify-content: center;
-    padding: .5rem 0;
-    background-color: #ffffff;
+    padding: 0 .5rem;
+    background-color: transparent;
     border: 1px solid #104734;
     border-radius: .3rem;
+    cursor: pointer;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: #104734;
 } 
 
-.see-more-less-btn {
-    width: 10rem;
-    display: flex;
-    justify-content: center;
-    color: #104734;
-    font-family: 'Alegreya Sans', sans-serif;
-    line-height: 1.5rem;
-    padding: .5rem 0;
+button:hover {
+    background-color: #ffffff;
+}
+
+.see-more-less-btn1,
+.see-more-less-btn2,
+.see-more-less-btn3,
+.see-more-less-btn4,
+.see-more-less-btn5 {
+    width: 9rem;
     margin-top: 2rem;
-    border: 1px solid #104734;
-    border-radius: .3rem;
-}
-
-.button-text {
-    color: #104734;
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    cursor: pointer;
-    transition: .5s; 
-}
-
-.button-text:hover {
-    transform: scale(1.1);
 }
 
 /* Copyright */
 .copyright {
-    padding: 10rem 0 2rem;
+    padding: 4rem 0 2rem;
     position: fixed;
     bottom: 0;
     z-index: -1;
@@ -555,15 +514,11 @@ button {
     font-size: 1.5rem;
 }
 
-.contact .fas {
-    font-size: 1.5rem;
-}
-
-form {
-padding: 0 15rem;
-}
-
 #message {
     height: 15rem;
 }
 
+.map {
+    display: flex;
+    justify-content: end;
+}
