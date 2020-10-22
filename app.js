@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  // see more-less
-  const seeMoreLessBtn1 = document.querySelector(".button-text1");
+  // see more-less 1
+  const seeMoreLessBtn1 = document.querySelector(".see-more-less-btn1");
   const additionalPictures1 = document.querySelector(".additional-pictures1");
 
   seeMoreLessBtn1.addEventListener("click", function() {
@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
           seeMoreLessBtn1.textContent = "Zobacz więcej";
       }
   });
-  // see more-less
-  const seeMoreLessBtn2 = document.querySelector(".button-text2");
+  // see more-less 2
+  const seeMoreLessBtn2 = document.querySelector(".see-more-less-btn2");
   const additionalPictures2 = document.querySelector(".additional-pictures2");
 
   seeMoreLessBtn2.addEventListener("click", function() {
@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
           seeMoreLessBtn2.textContent = "Zobacz więcej";
       }
   });
-  // see more-less
-  const seeMoreLessBtn3 = document.querySelector(".button-text3");
+  // see more-less 3
+  const seeMoreLessBtn3 = document.querySelector(".see-more-less-btn3");
   const additionalPictures3 = document.querySelector(".additional-pictures3");
 
   seeMoreLessBtn3.addEventListener("click", function() {
@@ -39,8 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
           seeMoreLessBtn3.textContent = "Zobacz więcej";
       }
   });
-  // see more-less
-  const seeMoreLessBtn4 = document.querySelector(".button-text4");
+  // see more-less 4
+  const seeMoreLessBtn4 = document.querySelector(".see-more-less-btn4");
   const additionalPictures4 = document.querySelector(".additional-pictures4");
 
   seeMoreLessBtn4.addEventListener("click", function() {
@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function () {
           seeMoreLessBtn4.textContent = "Zobacz więcej";
       }
   });
-  // see more-less
-  const seeMoreLessBtn5 = document.querySelector(".button-text5");
+  // see more-less 5
+  const seeMoreLessBtn5 = document.querySelector(".see-more-less-btn5");
   const additionalPictures5 = document.querySelector(".additional-pictures5");
 
   seeMoreLessBtn5.addEventListener("click", function() {
