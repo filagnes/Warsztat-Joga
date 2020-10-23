@@ -39,7 +39,7 @@ h2 {
     text-transform: uppercase;
     text-align: left;
     font-family: 'Alegreya Sans', sans-serif;   
-    padding-bottom: .5rem;
+    padding-top: .5rem;
 }
 
 h3 {
@@ -207,32 +207,29 @@ a img {
 }
 
 a img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     color: #104734;
 }
 
 /* Rodzaje zajec */
-.our-offer {
+.our-offer, .about-me, .place, .about-rooster {
+    padding: 1rem 0;
     font-weight: 300;
 }
 
-.classes, .about-me, .place, .about-rooster {
-    padding: 1rem;
-}
-
 @media screen and (min-width: 768px) {
-    .classes, .about-me, .place, .about-rooster {
+    .our-offer, .about-me, .place, .about-rooster {
         padding: 1rem 10rem 0;
     }
 }
 
-.classes h2 {
+.our-offer h2 {
     text-align: center;
 }
 
 .picture-class {
     width: 100%;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 0;
     border-radius: .5rem;
 }
 
@@ -284,7 +281,7 @@ a img:hover {
 /* Rooster */
 .rooster {
     width: 16rem;
-    height: 25rem;
+    height: 22rem;
     background-color: #ffffff;
     border-top: 5px solid #104734;
     border-radius: .5rem;
@@ -296,6 +293,7 @@ a img:hover {
 @media screen and (min-width: 768px) {
     .rooster {
         width: 12rem;
+        height: 25rem;
     }
 }
 
