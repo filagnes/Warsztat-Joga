@@ -353,18 +353,14 @@ a img:hover {
 .logo-green {
     border-radius: .5rem;
     width: 13rem;
-    background-color: #ffffff;
+    background-color: #104734;
     padding: 0;
     margin: 0;
 }
 
 @media screen and (min-width: 768px) {
     .logo-green {
-        border-radius: .5rem;
         width: 17rem;
-        background-color: #ffffff;
-        padding: 0;
-        margin: 0;
     }
 }
 
