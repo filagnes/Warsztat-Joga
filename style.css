@@ -227,6 +227,16 @@ a img:hover {
     text-align: center;
 }
 
+.classes {
+    padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .classes {
+        padding: 0 10rem;
+    }
+}
+
 .picture-class {
     width: 100%;
     margin: 1rem 0 0;
