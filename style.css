@@ -281,7 +281,6 @@ a img:hover {
 /* Rooster */
 .rooster {
     width: 16rem;
-    height: 22rem;
     background-color: #ffffff;
     border-top: 5px solid #104734;
     border-radius: .5rem;
@@ -293,7 +292,6 @@ a img:hover {
 @media screen and (min-width: 768px) {
     .rooster {
         width: 12rem;
-        height: 25rem;
     }
 }
 
