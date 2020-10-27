@@ -18,18 +18,18 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-xl">
-        <a href="index.html"><img class="logo" src="images/logo-white.png" alt="logo"></a>
+        <a href="../index.html"><img class="logo" src="images/logo-white.png" alt="logo"></a>
         <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarContent">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarContent">
             <div class="navbar-nav">
-                <a href="index.html" class="nav-item nav-link text-uppercase">Strona główna</a>
+                <a href="../index.html" class="nav-item nav-link text-uppercase">Strona główna</a>
                 <a href="about-me.html" class="nav-item text-uppercase nav-link">O mnie</a>
                 <a href="place.html" class="nav-item text-uppercase nav-link">Miejsce</a>
                 <a href="our-offer.html" class="nav-item text-uppercase nav-link">Zajęcia</a>
                 <a href="price-list.html" class="nav-item text-uppercase nav-link">Cennik</a>
-                <a href="rooster.html" class="nav-item text-uppercase nav-link">Grafik</a>
+                <!-- <a href="rooster.html" class="nav-item text-uppercase nav-link">Grafik</a> -->
                 <a href="regulations.html" class="nav-item text-uppercase nav-link">Regulamin</a>
                 <a href="contact.html" class="nav-item text-uppercase nav-link active">Kontakt</a>
             </div>
@@ -62,7 +62,7 @@
                             </span>
                 </div>
                 <div class="col-lg py-3">
-                    <form action="#">
+                    <!-- <form action="mailto:agafilam@gmail.com" method="post" enctype="text/plain" n>
                         <div class="form-row">
                             <div class="col-md form-group">
                                 <input type="text" id="name" placeholder="Twoje imię i nazwisko" class="form-control">
@@ -81,15 +81,26 @@
 
                         <div class="row">
                             <div class="col d-flex justify-content-center">
-                                <button class="go-up">
-                                    <div>Wyślij wiadomość</div>
-                                </button>
-                            </div>
-                        </div>
-                        <br>
-                    </form>
+                                <button>
+                                    <input type="submit" value="Wyślij wiadomość" />
+                                 </button>
+                    </form> -->
+                    <!-- <div>Wyślij wiadomość</div> -->
+
+                    <form method="post">
+                        Email: <input name="email" type="text" /><br />
+                        Temat: <input name="subject" type="text" /><br />
+                        Wiadomość:<br />
+                        <textarea name="comment" rows="15" cols="40"></textarea><br />
+                        <input type="submit" value="Wyślij" />
+                        </form>
+                   
                 </div>
             </div>
+            <br>
+            </form>
+        </div>
+        </div>
         </div>
         <div class="map">
             <iframe
@@ -114,6 +125,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
+
+    <script src="form.php"></script>
 
 </body>
 
